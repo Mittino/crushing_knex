@@ -6,6 +6,7 @@ CREATE TABLE manufacturer{
 CREATE TABLE lines{
   id serial PRIMARY KEY,
   line_name text,
+  designer text,
   mfctr_id integer NOT NULL REFERENCES manufacturer ON DELETE CASCADE
 }
 
